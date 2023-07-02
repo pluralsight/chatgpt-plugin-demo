@@ -1,0 +1,21 @@
+openapi: 3.0.1
+info:
+    title: Stock Quote
+    description: Get price and volume information for a given stock.
+    version: "v1"
+servers:
+    - url: [YOUR_DOMAIN, must be HTTPS]
+paths:
+    /stock:
+        get:
+            operationId: getStockData
+            summary: Retrieves the price and volume information for a given stock symbol.
+            parameters:
+                - in: query
+                  name: symbol
+                  schema:
+                      type: string
+                  description: The symbol of the stock to get a quote for. For example, the stock symbol MSFT represents the company Microsoft.
+            responses:
+                "200":
+                    description: OK

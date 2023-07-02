@@ -1,0 +1,17 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Stock Quote",
+    "name_for_model": "StockQuote",
+    "description_for_human": "Get price and volume information for a given stock.",
+    "description_for_model": "Get price and volume information for a given stock.  Always display results using markdown tables.",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "[YOUR_DOMAIN, must be HTTPS]/openapi.yaml"
+    },
+    "logo_url": "[YOUR_DOMAIN, must be HTTPS]/logo.png",
+    "contact_email": "support@example.com",
+    "legal_info_url": "https://example.com/legal"
+}
